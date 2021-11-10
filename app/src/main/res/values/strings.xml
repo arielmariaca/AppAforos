@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppAforos</string>
+    <string name="ingreso">Ingrese Aforo Total:</string>
+    <string name="ingreso_msg">Ingrese la cantidad máxima de personas permitidas dentro del recinto.</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="aforo_max">Aforo Máximo:</string>
+    <string name="total">Total Personas:</string>
+    <string name="faltantes">Personas Faltantes:</string>
+    <string name="ingresar">Ingresar Persona</string>
+    <string name="salir">Salir Persona</string>
+</resources>

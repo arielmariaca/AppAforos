@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acceso_personas"
+    android:background="@color/primary_light">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aforo_max"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aforo_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/primary_text"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/total_personas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/primary_text"
+            android:text="@string/faltantes" />
+
+        <TextView
+            android:id="@+id/faltantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/agregar"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/ingresar"
+        android:onClick="agregarPer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/quitar"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/salir"
+        android:onClick="eliminarPer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
